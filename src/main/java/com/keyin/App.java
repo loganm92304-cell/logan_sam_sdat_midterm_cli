@@ -35,19 +35,19 @@ public class App {
                 switch (input) {
                     case "1":
                         System.out.println("\n--- Airports in Each City ---");
-                        cliService.getAirportsInEachCity().forEach(System::println);
+                        cliService.getAirportsInEachCity().forEach(item -> System.out.println(item));
                         break;
                     case "2":
                         System.out.println("\n--- Aircraft Flown by Each Passenger ---");
-                        cliService.getAircraftPerPassenger().forEach(System::println);
+                        cliService.getAircraftPerPassenger().forEach(item -> System.out.println(item));
                         break;
                     case "3":
                         System.out.println("\n--- Airports per Aircraft ---");
-                        cliService.getAirportsPerAircraft().forEach(System::println);
+                        cliService.getAirportsPerAircraft().forEach(item -> System.out.println(item));
                         break;
                     case "4":
                         System.out.println("\n--- Airports Used by Passengers ---");
-                        cliService.getAirportsUsedByPassengers().forEach(System::println);
+                        cliService.getAirportsUsedByPassengers().forEach(item -> System.out.println(item));
                         break;
                     case "5":
                         running = false;
