@@ -39,7 +39,7 @@ aircraft type and operating airline.
 Passenger: Logan Marsh -> Aircraft Flown: Boeing 737 (Air Canada), Airbus A320 (WestJet)
 Passenger: Jane Doe -> Aircraft Flown: Dash 8 (Porter Airlines)
 
-* 3. What airports does each aircraft take off from and land at?
+# 3. What airports does each aircraft take off from and land at?
 
 * API Endpoint Queried: GET /aircraft
 * Data Model Relationship: Aircraft $\rightarrow$ List<Airport>
@@ -53,7 +53,7 @@ iterates over the list to output which airports each aircraft model operates out
 Aircraft: Boeing 737 [Air Canada] -> Associated Airports: St. John's International Airport (YYT), Toronto Pearson (YYZ)
 Aircraft: Airbus A320 [WestJet] -> Associated Airports: Calgary International (YYC)
 
-* 4. What airports have passengers used?
+# 4. What airports have passengers used?
 
 * API Endpoint Queried: GET /passengers
 * Data Model Relationship: Passenger $\rightarrow$ List<Aircraft> $\rightarrow$ List<Airport>
